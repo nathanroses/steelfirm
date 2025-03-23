@@ -4,17 +4,17 @@ import { useRef, useState, Fragment } from "react";
 import Image from "next/image";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import { Transition } from "@headlessui/react";
-import Logo01 from "@/public/images/logo-01.svg";
-import Logo02 from "@/public/images/logo-02.svg";
-import Logo03 from "@/public/images/logo-03.svg";
-import Logo04 from "@/public/images/logo-04.svg";
-import Logo05 from "@/public/images/logo-05.svg";
-import Logo06 from "@/public/images/logo-06.svg";
-import Logo07 from "@/public/images/logo-07.svg";
-import Logo08 from "@/public/images/logo-08.svg";
-import Logo09 from "@/public/images/logo-09.svg";
+import IconCriminal from "@/public/images/icon-criminal.svg";
+import IconCivil from "@/public/images/icon-civil.svg";
+import IconFamily from "@/public/images/icon-family.svg";
+import IconPersonalInjury from "@/public/images/icon-injury.svg";
+import IconBusiness from "@/public/images/icon-business.svg";
+import IconEstate from "@/public/images/icon-estate.svg";
+import IconImmigration from "@/public/images/icon-immigration.svg";
+import IconEmployment from "@/public/images/icon-employment.svg";
+import IconRealEstate from "@/public/images/icon-realestate.svg";
 
-export default function BusinessCategories() {
+export default function PracticeAreas() {
   const tabsRef = useRef<HTMLDivElement>(null);
   const [selectedTab, setSelectedTab] = useState<number>(0);
 
@@ -35,10 +35,12 @@ export default function BusinessCategories() {
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
                       height="16"
+                      viewBox="0 0 24 24"
                     >
-                      <path d="M8 2a6 6 0 1 0 0 12A6 6 0 0 0 8 2ZM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Z" />
+                      <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 2.18l7 3.12v5.7c0 4.83-3.4 9.19-7 10.3-3.6-1.11-7-5.47-7-10.3V6.3l7-3.12z"/>
+                      <path d="M11 7h2v6h-2zm0 8h2v2h-2z"/>
                     </svg>
-                    <span>Startups</span>
+                    <span>Criminal Defense</span>
                   </button>
                 </Tab>
                 <Tab as={Fragment}>
@@ -50,10 +52,11 @@ export default function BusinessCategories() {
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
                       height="16"
+                      viewBox="0 0 24 24"
                     >
-                      <path d="M5.936.278A7.983 7.983 0 0 1 8 0a8 8 0 1 1-8 8c0-.722.104-1.413.278-2.064a1 1 0 1 1 1.932.516A5.99 5.99 0 0 0 2 8a6 6 0 1 0 6-6c-.53 0-1.045.076-1.548.21A1 1 0 1 1 5.936.278Zm.132 7.204A2.003 2.003 0 0 0 8 10a2 2 0 1 0-.518-3.932L3.707 2.293a1 1 0 0 0-1.414 1.414l3.775 3.775Z" />
+                      <path d="M12 2L2 8.33v7.33L12 22l10-6.33V8.33L12 2zm0 2.18l7.09 4.5L12 14.18l-7.09-5.5L12 4.18zm-8 6.38L11 16v3.64L4 15.28v-4.72zm10 3.64v-3.64l7-5.44v4.72l-7 4.36z"/>
                     </svg>
-                    <span>Web Apps</span>
+                    <span>Civil Litigation</span>
                   </button>
                 </Tab>
                 <Tab as={Fragment}>
@@ -65,10 +68,11 @@ export default function BusinessCategories() {
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
                       height="16"
+                      viewBox="0 0 24 24"
                     >
-                      <path d="M3 2a1 1 0 0 0-2 0v12a1 1 0 1 0 2 0V2Zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm4 12a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-5 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm5-13a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm4 0a1 1 0 1 0-2 0v12a1 1 0 1 0 2 0V2Z" />
+                      <path d="M16 1H8C6.9 1 6 1.9 6 3v18c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm0 18H8V5h8v14zm-4-8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2.7.9-2.9 2h5.8c-.2-1.1-1.8-2-2.9-2z"/>
                     </svg>
-                    <span>eCommerce</span>
+                    <span>Family Law</span>
                   </button>
                 </Tab>
                 <Tab as={Fragment}>
@@ -80,10 +84,11 @@ export default function BusinessCategories() {
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
                       height="16"
+                      viewBox="0 0 24 24"
                     >
-                      <path d="M.06 10.003a1 1 0 0 1 1.947.455c-.019.08.01.152.078.19l5.83 3.333c.052.03.115.03.168 0l5.83-3.333a.163.163 0 0 0 .078-.188 1 1 0 1 1 1.947-.459 2.161 2.161 0 0 1-1.032 2.384l-5.83 3.331a2.168 2.168 0 0 1-2.154 0l-5.83-3.331A2.162 2.162 0 0 1 .06 10.003Zm7.855-7.981-5.83 3.332a.17.17 0 0 0 0 .295l5.828 3.33a.172.172 0 0 0 .17.002l5.83-3.333a.17.17 0 0 0 0-.294L8.084 2.023a.172.172 0 0 0-.17-.001h.001ZM9.075.285l5.83 3.332c1.458.833 1.458 2.935 0 3.768l-5.83 3.333c-.667.38-1.485.38-2.153-.001l-5.83-3.332c-1.457-.833-1.457-2.935 0-3.767L6.924.285a2.173 2.173 0 0 1 2.15 0h.001Z" />
+                      <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 16l-5 2.72L7 16v-3.73L12 15l5-2.73V16z"/>
                     </svg>
-                    <span>Enterprise</span>
+                    <span>Corporate Law</span>
                   </button>
                 </Tab>
               </TabList>
