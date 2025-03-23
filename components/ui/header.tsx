@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { useState, useEffect } from 'react';
-import Dropdown from "@/components/dropdown";
 
 interface NavLinkProps {
   href: string;
@@ -21,16 +20,9 @@ export default function Header() {
   return (
     <header className="fixed z-30 w-full bg-gray-900/95 shadow-md">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        {/* Top bar with contact info */}
-        <div className="flex h-16 items-center justify-end border-b border-gray-800 md:h-20">
-          <Link href="/contact" className="text-md text-blue-400 transition-colors duration-200 hover:text-blue-300">
-            Via Email
-          </Link>
-        </div>
-        
         {/* Main navigation */}
-        <div className="flex items-center justify-between py-4">
-          {/* Site branding - simplified and cleaner */}
+        <div className="flex items-center justify-between py-6">
+          {/* Site branding */}
           <div className="flex items-center">
             <Link href="/" className="block" aria-label="The Steel Law Firm">
               <h1 className="text-2xl font-bold text-white/90 md:text-3xl">
