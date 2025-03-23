@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState, useEffect } from 'react';
+import MobileMenu from "./mobile-menu";
 
 interface NavLinkProps {
   href: string;
@@ -32,7 +33,7 @@ export default function Header() {
           </div>
 
           {/* Primary navigation */}
-          <nav>
+          <nav className="hidden md:block">
             <ul className="flex space-x-8 text-sm font-medium uppercase tracking-wider text-white">
               <NavLink href="/" label="HOME" />
               <NavLink href="/about-us" label="ABOUT US" />
@@ -41,6 +42,9 @@ export default function Header() {
               <NavLink href="/contact" label="CONTACT US" />
             </ul>
           </nav>
+          
+          {/* Mobile menu */}
+          <MobileMenu />
         </div>
       </div>
     </header>
