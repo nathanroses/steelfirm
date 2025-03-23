@@ -20,15 +20,15 @@ export default function HeroHome() {
           {/* Left column - content */}
           <div className="flex flex-col justify-center">
             {/* Brand marker */}
-            <div className="mb-3 flex items-center">
-              <div className="mr-2 h-[1px] w-10 bg-blue-400"></div>
+            <div className="flex items-center mb-4">
+             <div className="h-px w-12 bg-blue-500 mr-4"></div>
               <span className="text-sm font-light tracking-widest text-blue-400">ESTABLISHED 1985</span>
-            </div>
+               </div>
             
             {/* Heading with modern typography */}
             <h1 className="mb-6 text-5xl font-bold tracking-tight text-white md:text-6xl">
-              <span className="block">THE STEEL</span>
-              <span className="bg-gradient-to-r from-white to-blue-300 bg-clip-text text-transparent">LAW FIRM</span>
+             <span className="block">THE STEEL</span>
+             <span className="block text-blue-300">LAW FIRM</span>
             </h1>
             
             {/* Tagline with glass card effect */}
