@@ -32,7 +32,7 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* Primary navigation */}
+          {/* Primary navigation - hidden on mobile */}
           <nav className="hidden md:block">
             <ul className="flex space-x-8 text-sm font-medium uppercase tracking-wider text-white">
               <NavLink href="/" label="HOME" />
