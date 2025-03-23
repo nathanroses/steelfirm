@@ -1,100 +1,116 @@
 import Link from "next/link";
-import Logo from "./logo";
+import { useState, useEffect } from 'react';
 import Dropdown from "@/components/dropdown";
-import MobileMenu from "./mobile-menu";
 
 export default function Header() {
+  const [top, setTop] = useState(true);
+
+  // detect whether user has scrolled the page down by 10px
+  useEffect(() => {
+    const scrollHandler = () => {
+      window.pageYOffset > 10 ? setTop(false) : setTop(true)
+    };
+    window.addEventListener('scroll', scrollHandler);
+    return () => window.removeEventListener('scroll', scrollHandler);
+  }, [top]);
+
   return (
-    <header className="fixed top-2 z-30 w-full md:top-6">
+    <header className={`fixed z-30 w-full transition duration-300 ${top ? 'bg-transparent' : 'bg-white shadow-lg'}`}>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="relative flex h-14 items-center justify-between gap-3 rounded-2xl bg-white/90 px-3 shadow-lg shadow-black/[0.03] backdrop-blur-xs before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(var(--color-gray-100),var(--color-gray-200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
+        <div className="flex h-20 items-center justify-between md:h-24">
+
           {/* Site branding */}
           <div className="flex flex-1 items-center">
-            <Logo />
+            <Link href="/" className="block" aria-label="The Steel Law Firm">
+              <h1 className={`text-3xl font-bold ${top ? 'text-gray-800' : 'text-gray-700'}`}>
+                THE STEEL LAW FIRM, P.C.
+              </h1>
+            </Link>
           </div>
 
-          {/* Desktop navigation */}
-          <nav className="hidden md:flex md:grow">
-            {/* Desktop menu links */}
-            <ul className="flex grow flex-wrap items-center justify-center gap-4 text-sm lg:gap-8">
-              <li className="px-3 py-1">
-                <Link
-                  href="/pricing"
-                  className="flex items-center text-gray-700 transition hover:text-gray-900"
-                >
-                  Pricing
-                </Link>
-              </li>
-              <li className="px-3 py-1">
-                <Link
-                  href="/customers"
-                  className="flex items-center text-gray-700 transition hover:text-gray-900"
-                >
-                  Customers
-                </Link>
-              </li>
-              <li className="px-3 py-1">
-                <Link
-                  href="/blog"
-                  className="flex items-center text-gray-700 transition hover:text-gray-900"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li className="px-3 py-1">
-                <Link
-                  href="/documentation"
-                  className="flex items-center text-gray-700 transition hover:text-gray-900"
-                >
-                  Docs
-                </Link>
-              </li>
-              {/* 1st level: hover */}
-              <Dropdown title="Extra">
-                {/* 2nd level: hover */}
+          {/* Contact information */}
+          <div className="hidden md:flex md:items-center md:justify-end">
+            <div className="text-right">
+              <p className="text-lg font-medium text-gray-800">(404)605-0023</p>
+              <Link href="/contact" className="text-md text-blue-600 hover:text-blue-700">
+                Via Email
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Navigation */}
+      <nav className="border-t border-gray-200 bg-gray-700 text-white">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <ul className="flex justify-center space-x-8 py-3 text-sm font-medium uppercase tracking-wider">
+            <li>
+              <Link href="/" className="hover:text-blue-200">
+                HOME
+              </Link>
+            </li>
+            <li>
+              <Link href="/about-us" className="hover:text-blue-200">
+                ABOUT US
+              </Link>
+            </li>
+            
+            {/* Practice Areas Dropdown */}
+            <li>
+              <Dropdown title="PRACTICE AREAS">
                 <li>
                   <Link
-                    href="/support"
+                    href="/practice-areas/criminal-defense"
                     className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
                   >
-                    Support center
+                    Criminal Defense
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/apps"
+                    href="/practice-areas/professional-misconduct"
                     className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
                   >
-                    Apps
+                    Professional Misconduct
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/practice-areas/civil-litigation"
+                    className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    Civil Litigation
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/practice-areas/white-collar-defense"
+                    className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    White Collar Defense
                   </Link>
                 </li>
               </Dropdown>
-            </ul>
-          </nav>
-
-          {/* Desktop sign in links */}
-          <ul className="flex flex-1 items-center justify-end gap-3">
+            </li>
+            
             <li>
-              <Link
-                href="/signin"
-                className="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
-              >
-                Login
+              <Link href="/cases" className="hover:text-blue-200">
+                REPRESENTATIVE CASES
               </Link>
             </li>
             <li>
-              <Link
-                href="/signup"
-                className="btn-sm bg-gray-800 text-gray-200 shadow-sm hover:bg-gray-900"
-              >
-                Register
+              <Link href="/media" className="hover:text-blue-200">
+                MEDIA
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="hover:text-blue-200">
+                CONTACT US
               </Link>
             </li>
           </ul>
-
-          <MobileMenu />
         </div>
-      </div>
+      </nav>
     </header>
   );
 }
