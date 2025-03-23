@@ -36,10 +36,10 @@ export default function Header() {
           <nav className="hidden md:block">
             <ul className="flex space-x-8 text-sm font-medium uppercase tracking-wider text-white">
               <NavLink href="/" label="HOME" />
-              <NavLink href="/about-us" label="ABOUT US" />
-              <NavLink href="/cases" label="REPRESENTATIVE CASES" />
-              <NavLink href="/media" label="MEDIA" />
-              <NavLink href="/contact" label="CONTACT US" />
+              <NavLink href="/features" label="FEATURES" />
+              <NavLink href="/faqs" label="FAQS" />
+              <NavLink href="/testimonials" label="TESTIMONIALS" />
+              <NavLink href="/contact" label="CONTACT" />
             </ul>
           </nav>
           
