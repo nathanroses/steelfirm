@@ -23,12 +23,12 @@ export default function HeroHome() {
             <div className="flex items-center mb-4">
              <div className="h-px w-12 bg-blue-500 mr-4"></div>
               <span className="text-sm font-light tracking-widest text-blue-400">ESTABLISHED 1985</span>
-               </div>
+            </div>
             
             {/* Heading with modern typography */}
             <h1 className="mb-6 text-5xl font-bold tracking-tight text-white md:text-6xl">
              <span className="block">THE STEEL</span>
-             <span className="block text-blue-300">LAW FIRM</span>
+             <span className="block text-blue-300">LAW FIRM, P.C.</span>
             </h1>
             
             {/* Tagline with glass card effect */}
@@ -38,13 +38,13 @@ export default function HeroHome() {
               </p>
             </div>
             
-            {/* Catchphrase */}
+            {/* Core values statement */}
             <p className="mb-8 text-xl font-medium uppercase tracking-wider text-white">
-              <span className="text-blue-300">Command of the law.</span> 
+              <span className="text-blue-300">Command of the law</span> 
               <span className="mx-2 text-gray-400">•</span>
-              <span className="text-blue-300">Experience in the courtroom.</span>
+              <span className="text-blue-300">Experience in the courtroom</span>
               <span className="mx-2 text-gray-400">•</span>
-              <span className="text-blue-300">Unmatched results.</span>
+              <span className="text-blue-300">Unmatched results</span>
             </p>
             
             {/* Modern action buttons */}
