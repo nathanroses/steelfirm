@@ -70,7 +70,7 @@ export default function HeroHome() {
             {/* 3D layered card effect for images */}
             <div className="relative h-[500px] w-full rounded-2xl border border-white/10 bg-gray-800/50 p-2 shadow-2xl backdrop-blur-sm">
               <Image
-                src="/images/attorneys.jpg"
+                src="/images/steelmain.png"
                 alt="The Steel Law Firm Attorneys"
                 fill
                 className="rounded-xl object-cover"
