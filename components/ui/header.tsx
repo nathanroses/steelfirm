@@ -23,18 +23,17 @@ export default function Header() {
   return (
     <header className="fixed z-30 w-full bg-gray-900/95 shadow-md">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        {/* Main navigation */}
-        <div className="flex items-center justify-between py-6">
-          {/* Site branding - No logo, just text */}
+        <div className="flex items-center justify-between py-5">
+          {/* Site branding - No logo, just the name as requested */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center" aria-label="The Steel Law Firm">
-              <h1 className="text-xl font-bold text-white tracking-wider md:text-2xl font-serif">
+              <h1 className="text-xl font-bold text-white md:text-2xl font-serif tracking-wider">
                 THE STEEL LAW FIRM, P.C.
               </h1>
             </Link>
           </div>
 
-          {/* Primary navigation - hidden on mobile */}
+          {/* Primary navigation with improved typography */}
           <nav className="hidden md:block">
             <ul className="flex space-x-10 text-sm font-medium uppercase tracking-widest text-white font-serif">
               <NavLink href="/" label="HOME" />
