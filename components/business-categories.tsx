@@ -26,67 +26,67 @@ export default function BusinessCategories() {
             {/* Buttons */}
             <div className="flex justify-center">
               <TabList className="relative mb-8 inline-flex flex-wrap justify-center rounded-xl bg-white p-2 shadow-lg shadow-black/[0.03] before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(var(--color-gray-100),var(--color-gray-200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] max-[480px]:max-w-[180px] min-[480px]:mb-12">
-                <Tab as={Fragment}>
-                  <button
-                    className={`ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-hidden ${selectedTab === 0 ? "bg-gray-800 text-gray-200" : "text-gray-700"}`}
-                  >
-                    <svg
-                      className={`fill-current ${selectedTab === 0 ? "text-gray-400" : "text-gray-500"}`}
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                    >
-                      <path d="M8 2a6 6 0 1 0 0 12A6 6 0 0 0 8 2ZM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Z" />
-                    </svg>
-                    <span>Startups</span>
-                  </button>
-                </Tab>
-                <Tab as={Fragment}>
-                  <button
-                    className={`ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-hidden ${selectedTab === 1 ? "bg-gray-800 text-gray-200" : "text-gray-700"}`}
-                  >
-                    <svg
-                      className={`fill-current ${selectedTab === 1 ? "text-gray-400" : "text-gray-500"}`}
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                    >
-                      <path d="M5.936.278A7.983 7.983 0 0 1 8 0a8 8 0 1 1-8 8c0-.722.104-1.413.278-2.064a1 1 0 1 1 1.932.516A5.99 5.99 0 0 0 2 8a6 6 0 1 0 6-6c-.53 0-1.045.076-1.548.21A1 1 0 1 1 5.936.278Zm.132 7.204A2.003 2.003 0 0 0 8 10a2 2 0 1 0-.518-3.932L3.707 2.293a1 1 0 0 0-1.414 1.414l3.775 3.775Z" />
-                    </svg>
-                    <span>Web Apps</span>
-                  </button>
-                </Tab>
-                <Tab as={Fragment}>
-                  <button
-                    className={`ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-hidden ${selectedTab === 2 ? "bg-gray-800 text-gray-200" : "text-gray-700"}`}
-                  >
-                    <svg
-                      className={`fill-current ${selectedTab === 2 ? "text-gray-400" : "text-gray-500"}`}
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                    >
-                      <path d="M3 2a1 1 0 0 0-2 0v12a1 1 0 1 0 2 0V2Zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm4 12a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-5 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm5-13a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm4 0a1 1 0 1 0-2 0v12a1 1 0 1 0 2 0V2Z" />
-                    </svg>
-                    <span>eCommerce</span>
-                  </button>
-                </Tab>
-                <Tab as={Fragment}>
-                  <button
-                    className={`ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-hidden ${selectedTab === 3 ? "bg-gray-800 text-gray-200" : "text-gray-700"}`}
-                  >
-                    <svg
-                      className={`fill-current ${selectedTab === 3 ? "text-gray-400" : "text-gray-500"}`}
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                    >
-                      <path d="M.06 10.003a1 1 0 0 1 1.947.455c-.019.08.01.152.078.19l5.83 3.333c.052.03.115.03.168 0l5.83-3.333a.163.163 0 0 0 .078-.188 1 1 0 1 1 1.947-.459 2.161 2.161 0 0 1-1.032 2.384l-5.83 3.331a2.168 2.168 0 0 1-2.154 0l-5.83-3.331A2.162 2.162 0 0 1 .06 10.003Zm7.855-7.981-5.83 3.332a.17.17 0 0 0 0 .295l5.828 3.33a.172.172 0 0 0 .17.002l5.83-3.333a.17.17 0 0 0 0-.294L8.084 2.023a.172.172 0 0 0-.17-.001h.001ZM9.075.285l5.83 3.332c1.458.833 1.458 2.935 0 3.768l-5.83 3.333c-.667.38-1.485.38-2.153-.001l-5.83-3.332c-1.457-.833-1.457-2.935 0-3.767L6.924.285a2.173 2.173 0 0 1 2.15 0h.001Z" />
-                    </svg>
-                    <span>Enterprise</span>
-                  </button>
-                </Tab>
-              </TabList>
+  <Tab as={Fragment}>
+    <button
+      className={`ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-hidden ${selectedTab === 0 ? "bg-gray-800 text-gray-200" : "text-gray-700"}`}
+    >
+      <svg
+        className={`fill-current ${selectedTab === 0 ? "text-gray-400" : "text-gray-500"}`}
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+      >
+        <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 13c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm1-3H7V4h2v6z" />
+      </svg>
+      <span>Investigation</span>
+    </button>
+  </Tab>
+  <Tab as={Fragment}>
+    <button
+      className={`ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-hidden ${selectedTab === 1 ? "bg-gray-800 text-gray-200" : "text-gray-700"}`}
+    >
+      <svg
+        className={`fill-current ${selectedTab === 1 ? "text-gray-400" : "text-gray-500"}`}
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+      >
+        <path d="M14 0H2C.9 0 0 .9 0 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm-1 11H3V3h10v8z" />
+      </svg>
+      <span>Trial</span>
+    </button>
+  </Tab>
+  <Tab as={Fragment}>
+    <button
+      className={`ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-hidden ${selectedTab === 2 ? "bg-gray-800 text-gray-200" : "text-gray-700"}`}
+    >
+      <svg
+        className={`fill-current ${selectedTab === 2 ? "text-gray-400" : "text-gray-500"}`}
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+      >
+        <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm4-8H8V2h2v3h2v1z" />
+      </svg>
+      <span>Appeal</span>
+    </button>
+  </Tab>
+  <Tab as={Fragment}>
+    <button
+      className={`ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-hidden ${selectedTab === 3 ? "bg-gray-800 text-gray-200" : "text-gray-700"}`}
+    >
+      <svg
+        className={`fill-current ${selectedTab === 3 ? "text-gray-400" : "text-gray-500"}`}
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+      >
+        <path d="M15 4h-4V1c0-.6-.4-1-1-1H6c-.6 0-1 .4-1 1v3H1c-.6 0-1 .4-1 1v10c0 .6.4 1 1 1h14c.6 0 1-.4 1-1V5c0-.6-.4-1-1-1zM6 2h4v2H6V2zm8 12H2V6h12v8z" />
+      </svg>
+      <span>Defense</span>
+    </button>
+  </Tab>
+</TabList>
             </div>
 
             {/* Tab panels */}
