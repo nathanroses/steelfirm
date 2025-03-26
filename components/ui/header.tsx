@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useState, useEffect } from 'react';
 import MobileMenu from "./mobile-menu";
-import Logo from "./logo";
 
 interface NavLinkProps {
   href: string;
@@ -26,11 +25,10 @@ export default function Header() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         {/* Main navigation */}
         <div className="flex items-center justify-between py-6">
-          {/* Site branding */}
+          {/* Site branding - No logo, just text */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center gap-3" aria-label="The Steel Law Firm">
-              <Logo />
-              <h1 className="text-xl font-bold text-white/90 md:text-2xl">
+            <Link href="/" className="flex items-center" aria-label="The Steel Law Firm">
+              <h1 className="text-xl font-bold text-white tracking-wider md:text-2xl font-serif">
                 THE STEEL LAW FIRM, P.C.
               </h1>
             </Link>
@@ -38,7 +36,7 @@ export default function Header() {
 
           {/* Primary navigation - hidden on mobile */}
           <nav className="hidden md:block">
-            <ul className="flex space-x-8 text-sm font-medium uppercase tracking-wider text-white">
+            <ul className="flex space-x-10 text-sm font-medium uppercase tracking-widest text-white font-serif">
               <NavLink href="/" label="HOME" />
               <NavLink href="/about" label="ABOUT US" />
               <NavLink href="/practice-areas" label="PRACTICE AREAS" />
