@@ -98,11 +98,29 @@ export default function MobileMenu() {
             </li>
             <li>
               <Link
-                href="/about-us"
+                href="/about"
                 className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
                 onClick={() => setMobileNavOpen(false)}
               >
                 About Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/practice-areas"
+                className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
+                onClick={() => setMobileNavOpen(false)}
+              >
+                Practice Areas
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/attorneys"
+                className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
+                onClick={() => setMobileNavOpen(false)}
+              >
+                Our Attorneys
               </Link>
             </li>
             <li>
@@ -112,15 +130,6 @@ export default function MobileMenu() {
                 onClick={() => setMobileNavOpen(false)}
               >
                 Representative Cases
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/media"
-                className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
-                onClick={() => setMobileNavOpen(false)}
-              >
-                Media
               </Link>
             </li>
             <li>
