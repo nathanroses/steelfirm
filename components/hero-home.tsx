@@ -5,7 +5,7 @@ import PageIllustration from "@/components/page-illustration";
 export default function HeroHome() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-gray-900 to-gray-800">
-      {/* Animated background elements */}
+      {/* Animated background elements - restored for elegance */}
       <div className="absolute inset-0">
         <div className="absolute left-1/4 top-1/4 h-64 w-64 animate-pulse rounded-full bg-blue-500/10 blur-3xl"></div>
         <div className="absolute bottom-0 right-1/4 h-96 w-96 animate-pulse rounded-full bg-purple-500/10 blur-3xl"></div>
@@ -19,19 +19,19 @@ export default function HeroHome() {
         <div className="grid gap-12 md:grid-cols-2">
           {/* Left column - content */}
           <div className="flex flex-col justify-center">
-            {/* Brand marker */}
+            {/* Brand marker - kept as you liked it */}
             <div className="flex items-center mb-4">
              <div className="h-px w-12 bg-blue-500 mr-4"></div>
               <span className="text-sm font-light tracking-widest text-blue-400">ESTABLISHED 1985</span>
             </div>
             
             {/* Heading with modern typography */}
-            <h1 className="mb-6 text-5xl font-bold tracking-tight text-white md:text-6xl">
+            <h1 className="mb-6 text-5xl font-bold tracking-tight text-white md:text-6xl font-serif">
              <span className="block">THE STEEL</span>
              <span className="block text-blue-300">LAW FIRM, P.C.</span>
             </h1>
             
-            {/* Tagline with glass card effect */}
+            {/* Tagline with glass card effect - retained for elegance */}
             <div className="mb-8 max-w-lg rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
               <p className="text-xl font-light text-white">
                 Providing our clients with superior advocacy is our passion and our promise.
@@ -96,14 +96,14 @@ export default function HeroHome() {
                 </div>
               </div>
               
-              {/* Decorative elements */}
+              {/* Decorative elements - retained for elegance */}
               <div className="absolute -right-4 -top-4 h-16 w-16 rounded-full border border-white/20 bg-blue-500/20 backdrop-blur-md"></div>
               <div className="absolute -bottom-4 -left-4 h-20 w-20 rounded-full border border-white/20 bg-purple-500/20 backdrop-blur-md"></div>
             </div>
           </div>
         </div>
         
-        {/* Scroll indicator */}
+        {/* Scroll indicator - retained as requested */}
         <div className="mt-12 flex justify-center pb-12 md:pb-20">
           <div className="flex flex-col items-center">
             <p className="mb-2 text-sm text-gray-400">Scroll to discover our services</p>
