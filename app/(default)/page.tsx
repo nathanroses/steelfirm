@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Home - Simple",
-  description: "Page description",
+  title: "The Steel Law Firm",
+  description: "Providing our clients with superior advocacy is our passion and our promise.",
 };
 
 import Hero from "@/components/hero-home";
