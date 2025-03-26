@@ -40,13 +40,13 @@ export default function Header() {
   }, []);
 
   const navItems = [
-    { name: 'HOME', href: '/', id: 'home' },
-    { name: 'ABOUT', href: '/about-us', id: 'about' },
-    { name: 'PRACTICE AREAS', href: '/practice-areas', id: 'practice' },
-    { name: 'OUR ATTORNEYS', href: '/attorneys', id: 'attorneys' },
-    { name: 'CASES', href: '/cases', id: 'cases' },
-    { name: 'CONTACT', href: '/contact', id: 'contact' }
-  ];
+  { name: 'HOME', href: '/', id: 'home' },
+  { name: 'ABOUT', href: '/features-home', id: 'features-home' },
+  { name: 'PRACTICE AREAS', href: '/features-planet', id: 'features-planet' },
+  { name: 'OUR ATTORNEYS', href: '/hero-home', id: 'hero-home' },
+  { name: 'CASES', href: '/large-testimonial', id: 'large-testimonial' },
+  { name: 'CONTACT', href: '/cta', id: 'cta' }
+];
 
   return (
     <header 
