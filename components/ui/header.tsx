@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState, useEffect } from 'react';
 import MobileMenu from "./mobile-menu";
+import Logo from "./logo";
 
 interface NavLinkProps {
   href: string;
@@ -25,8 +26,9 @@ export default function Header() {
         <div className="flex items-center justify-between py-6">
           {/* Site branding */}
           <div className="flex items-center">
-            <Link href="/" className="block" aria-label="The Steel Law Firm">
-              <h1 className="text-2xl font-bold text-white/90 md:text-3xl">
+            <Link href="/" className="flex items-center gap-3" aria-label="The Steel Law Firm">
+              <Logo />
+              <h1 className="text-xl font-bold text-white/90 md:text-2xl">
                 THE STEEL LAW FIRM, P.C.
               </h1>
             </Link>
