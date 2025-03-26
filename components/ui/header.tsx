@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { useState, useEffect } from 'react';
 import MobileMenu from "./mobile-menu";
@@ -38,9 +40,10 @@ export default function Header() {
           <nav className="hidden md:block">
             <ul className="flex space-x-8 text-sm font-medium uppercase tracking-wider text-white">
               <NavLink href="/" label="HOME" />
-              <NavLink href="/features" label="FEATURES" />
-              <NavLink href="/faqs" label="FAQS" />
-              <NavLink href="/testimonials" label="TESTIMONIALS" />
+              <NavLink href="/about" label="ABOUT US" />
+              <NavLink href="/practice-areas" label="PRACTICE AREAS" />
+              <NavLink href="/attorneys" label="OUR ATTORNEYS" />
+              <NavLink href="/cases" label="CASES" />
               <NavLink href="/contact" label="CONTACT" />
             </ul>
           </nav>
