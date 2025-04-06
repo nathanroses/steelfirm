@@ -17,7 +17,7 @@ export default function LegalAdvantages() {
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-24 text-center md:pb-28">
             <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-              Unmatched Legal Analysis & Strategy
+              Unmatched Legal Analysis
             </h2>
             <p className="text-lg text-gray-700">
               Our legal team delves deep into the intricacies of your case, identifying precedents and developing strategies that anticipate the opposition's arguments.
