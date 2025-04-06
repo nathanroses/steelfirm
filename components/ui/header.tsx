@@ -1,7 +1,5 @@
 "use client";
 
-// components/ui/header.tsx
-
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import MobileMenu from './mobile-menu';
@@ -39,14 +37,15 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Navigation items updated to match our pages
   const navItems = [
-  { name: 'HOME', href: '/', id: 'home' },
-  { name: 'ABOUT', href: '/features-home', id: 'features-home' },
-  { name: 'PRACTICE AREAS', href: '/features-planet', id: 'features-planet' },
-  { name: 'OUR ATTORNEYS', href: '/hero-home', id: 'hero-home' },
-  { name: 'CASES', href: '/large-testimonial', id: 'large-testimonial' },
-  { name: 'CONTACT', href: '/cta', id: 'cta' }
-];
+    { name: 'HOME', href: '/', id: 'home' },
+    { name: 'ABOUT', href: '/about', id: 'about' },
+    { name: 'PRACTICE AREAS', href: '/practice-areas', id: 'practice-areas' },
+    { name: 'OUR ATTORNEYS', href: '/attorneys', id: 'attorneys' },
+    { name: 'CASES', href: '/cases', id: 'cases' },
+    { name: 'CONTACT', href: '/contact', id: 'contact' }
+  ];
 
   return (
     <header 
@@ -123,7 +122,7 @@ export default function Header() {
           </div>
 
           {/* Mobile menu */}
-          <MobileMenu />
+          <MobileMenu navItems={navItems} />
         </div>
       </div>
       
