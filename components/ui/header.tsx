@@ -39,13 +39,13 @@ export default function Header() {
 
   // Navigation items updated to match our pages
   const navItems = [
-    { name: 'HOME', href: '/', id: 'home' },
-    { name: 'ABOUT', href: '/about', id: 'about' },
-    { name: 'PRACTICE AREAS', href: '/practice-areas', id: 'practice-areas' },
-    { name: 'OUR ATTORNEYS', href: '/attorneys', id: 'attorneys' },
-    { name: 'CASES', href: '/cases', id: 'cases' },
-    { name: 'CONTACT', href: '/contact', id: 'contact' }
-  ];
+  { name: 'HOME', href: '/', id: 'home' },
+  { name: 'ABOUT', href: '/about', id: 'about' },
+  { name: 'PRACTICE AREAS', href: '/apps', id: 'apps' },
+  { name: 'OUR ATTORNEYS', href: '/blog', id: 'blog' },
+  { name: 'CASES', href: '/customers', id: 'customers' },
+  { name: 'CONTACT', href: '/support', id: 'support' }
+];
 
   return (
     <header 
