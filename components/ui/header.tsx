@@ -122,7 +122,7 @@ export default function Header() {
           </div>
 
           {/* Mobile menu */}
-          <MobileMenu navItems={navItems} />
+          <MobileMenu />
         </div>
       </div>
       
