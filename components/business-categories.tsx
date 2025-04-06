@@ -14,7 +14,7 @@ import Logo07 from "@/public/images/logo-07.svg";
 import Logo08 from "@/public/images/logo-08.svg";
 import Logo09 from "@/public/images/logo-09.svg";
 
-export default function BusinessCategories() {
+export default function PracticeAreaCategories() {
   const tabsRef = useRef<HTMLDivElement>(null);
   const [selectedTab, setSelectedTab] = useState<number>(0);
 
@@ -26,67 +26,67 @@ export default function BusinessCategories() {
             {/* Buttons */}
             <div className="flex justify-center">
               <TabList className="relative mb-8 inline-flex flex-wrap justify-center rounded-xl bg-white p-2 shadow-lg shadow-black/[0.03] before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(var(--color-gray-100),var(--color-gray-200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] max-[480px]:max-w-[180px] min-[480px]:mb-12">
-  <Tab as={Fragment}>
-    <button
-      className={`ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-hidden ${selectedTab === 0 ? "bg-gray-800 text-gray-200" : "text-gray-700"}`}
-    >
-      <svg
-        className={`fill-current ${selectedTab === 0 ? "text-gray-400" : "text-gray-500"}`}
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-      >
-        <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 13c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm1-3H7V4h2v6z" />
-      </svg>
-      <span>Investigation</span>
-    </button>
-  </Tab>
-  <Tab as={Fragment}>
-    <button
-      className={`ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-hidden ${selectedTab === 1 ? "bg-gray-800 text-gray-200" : "text-gray-700"}`}
-    >
-      <svg
-        className={`fill-current ${selectedTab === 1 ? "text-gray-400" : "text-gray-500"}`}
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-      >
-        <path d="M14 0H2C.9 0 0 .9 0 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm-1 11H3V3h10v8z" />
-      </svg>
-      <span>Trial</span>
-    </button>
-  </Tab>
-  <Tab as={Fragment}>
-    <button
-      className={`ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-hidden ${selectedTab === 2 ? "bg-gray-800 text-gray-200" : "text-gray-700"}`}
-    >
-      <svg
-        className={`fill-current ${selectedTab === 2 ? "text-gray-400" : "text-gray-500"}`}
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-      >
-        <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm4-8H8V2h2v3h2v1z" />
-      </svg>
-      <span>Appeal</span>
-    </button>
-  </Tab>
-  <Tab as={Fragment}>
-    <button
-      className={`ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-hidden ${selectedTab === 3 ? "bg-gray-800 text-gray-200" : "text-gray-700"}`}
-    >
-      <svg
-        className={`fill-current ${selectedTab === 3 ? "text-gray-400" : "text-gray-500"}`}
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-      >
-        <path d="M15 4h-4V1c0-.6-.4-1-1-1H6c-.6 0-1 .4-1 1v3H1c-.6 0-1 .4-1 1v10c0 .6.4 1 1 1h14c.6 0 1-.4 1-1V5c0-.6-.4-1-1-1zM6 2h4v2H6V2zm8 12H2V6h12v8z" />
-      </svg>
-      <span>Defense</span>
-    </button>
-  </Tab>
-</TabList>
+                <Tab as={Fragment}>
+                  <button
+                    className={`ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-hidden ${selectedTab === 0 ? "bg-gray-800 text-gray-200" : "text-gray-700"}`}
+                  >
+                    <svg
+                      className={`fill-current ${selectedTab === 0 ? "text-gray-400" : "text-gray-500"}`}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                    >
+                      <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 13c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm1-3H7V4h2v6z" />
+                    </svg>
+                    <span>Criminal Defense</span>
+                  </button>
+                </Tab>
+                <Tab as={Fragment}>
+                  <button
+                    className={`ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-hidden ${selectedTab === 1 ? "bg-gray-800 text-gray-200" : "text-gray-700"}`}
+                  >
+                    <svg
+                      className={`fill-current ${selectedTab === 1 ? "text-gray-400" : "text-gray-500"}`}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                    >
+                      <path d="M14 0H2C.9 0 0 .9 0 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm-1 11H3V3h10v8z" />
+                    </svg>
+                    <span>Civil Litigation</span>
+                  </button>
+                </Tab>
+                <Tab as={Fragment}>
+                  <button
+                    className={`ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-hidden ${selectedTab === 2 ? "bg-gray-800 text-gray-200" : "text-gray-700"}`}
+                  >
+                    <svg
+                      className={`fill-current ${selectedTab === 2 ? "text-gray-400" : "text-gray-500"}`}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                    >
+                      <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm4-8H8V2h2v3h2v1z" />
+                    </svg>
+                    <span>White Collar</span>
+                  </button>
+                </Tab>
+                <Tab as={Fragment}>
+                  <button
+                    className={`ui-focus-visible:outline-none ui-focus-visible:ring ui-focus-visible:ring-blue-300 flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-lg px-3 text-sm font-medium transition-colors focus-visible:outline-hidden ${selectedTab === 3 ? "bg-gray-800 text-gray-200" : "text-gray-700"}`}
+                  >
+                    <svg
+                      className={`fill-current ${selectedTab === 3 ? "text-gray-400" : "text-gray-500"}`}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                    >
+                      <path d="M15 4h-4V1c0-.6-.4-1-1-1H6c-.6 0-1 .4-1 1v3H1c-.6 0-1 .4-1 1v10c0 .6.4 1 1 1h14c.6 0 1-.4 1-1V5c0-.6-.4-1-1-1zM6 2h4v2H6V2zm8 12H2V6h12v8z" />
+                    </svg>
+                    <span>Professional Conduct</span>
+                  </button>
+                </Tab>
+              </TabList>
             </div>
 
             {/* Tab panels */}
@@ -248,7 +248,7 @@ export default function BusinessCategories() {
               {/* Vertical lines */}
               <div className="absolute inset-y-0 left-1/2 -z-10 w-px -translate-x-[216px] bg-linear-to-b from-gray-200 to-transparent mix-blend-multiply"></div>
               <div className="absolute inset-y-0 left-1/2 -z-10 w-px translate-x-[216px] bg-linear-to-t from-gray-200 to-transparent mix-blend-multiply"></div>
-              {/* Logos */}
+              {/* Scale of Justice Logo */}
               <div className="absolute before:absolute before:-inset-3 before:animate-[spin_3s_linear_infinite] before:rounded-full before:border before:border-transparent before:[background:conic-gradient(from_180deg,transparent,var(--color-blue-500))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
                 <div className="animate-[breath_8s_ease-in-out_infinite_both]">
                   <div className="flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
@@ -257,13 +257,14 @@ export default function BusinessCategories() {
                       src={Logo01}
                       width={32}
                       height={32}
-                      alt="Logo 01"
+                      alt="Legal System"
                     />
                   </div>
                 </div>
               </div>
 
               <div className="relative flex flex-col" ref={tabsRef}>
+                {/* Criminal Defense */}
                 <TabPanel as={Fragment} static={true}>
                   <Transition
                     as="div"
@@ -281,7 +282,7 @@ export default function BusinessCategories() {
                               src={Logo02}
                               width={23}
                               height={22}
-                              alt="Logo 02"
+                              alt="Felony Defense"
                             />
                           </div>
                         </div>
@@ -294,7 +295,7 @@ export default function BusinessCategories() {
                               src={Logo03}
                               width={22}
                               height={22}
-                              alt="Logo 03"
+                              alt="Misdemeanor Cases"
                             />
                           </div>
                         </div>
@@ -307,7 +308,7 @@ export default function BusinessCategories() {
                               src={Logo04}
                               width={24}
                               height={22}
-                              alt="Logo 04"
+                              alt="Probation Violations"
                             />
                           </div>
                         </div>
@@ -320,7 +321,7 @@ export default function BusinessCategories() {
                               src={Logo05}
                               width={25}
                               height={25}
-                              alt="Logo 05"
+                              alt="Federal Cases"
                             />
                           </div>
                         </div>
@@ -333,7 +334,7 @@ export default function BusinessCategories() {
                               src={Logo06}
                               width={20}
                               height={18}
-                              alt="Logo 06"
+                              alt="Drug Charges"
                             />
                           </div>
                         </div>
@@ -346,7 +347,7 @@ export default function BusinessCategories() {
                               src={Logo07}
                               width={25}
                               height={25}
-                              alt="Logo 07"
+                              alt="DUI Defense"
                             />
                           </div>
                         </div>
@@ -359,7 +360,7 @@ export default function BusinessCategories() {
                               src={Logo08}
                               width={20}
                               height={20}
-                              alt="Logo 08"
+                              alt="Appeals"
                             />
                           </div>
                         </div>
@@ -372,7 +373,7 @@ export default function BusinessCategories() {
                               src={Logo09}
                               width={21}
                               height={13}
-                              alt="Logo 09"
+                              alt="Parole Hearings"
                             />
                           </div>
                         </div>
@@ -381,6 +382,7 @@ export default function BusinessCategories() {
                   </Transition>
                 </TabPanel>
 
+                {/* Civil Litigation Panel */}
                 <TabPanel as={Fragment} static={true}>
                   <Transition
                     as="div"
@@ -398,7 +400,7 @@ export default function BusinessCategories() {
                               src={Logo03}
                               width={22}
                               height={22}
-                              alt="Logo 03"
+                              alt="Contract Disputes"
                             />
                           </div>
                         </div>
@@ -411,7 +413,7 @@ export default function BusinessCategories() {
                               src={Logo04}
                               width={24}
                               height={22}
-                              alt="Logo 04"
+                              alt="Personal Injury"
                             />
                           </div>
                         </div>
@@ -424,7 +426,7 @@ export default function BusinessCategories() {
                               src={Logo05}
                               width={25}
                               height={25}
-                              alt="Logo 05"
+                              alt="Business Disputes"
                             />
                           </div>
                         </div>
@@ -437,7 +439,7 @@ export default function BusinessCategories() {
                               src={Logo02}
                               width={23}
                               height={22}
-                              alt="Logo 02"
+                              alt="Property Disputes"
                             />
                           </div>
                         </div>
@@ -450,7 +452,7 @@ export default function BusinessCategories() {
                               src={Logo07}
                               width={25}
                               height={25}
-                              alt="Logo 07"
+                              alt="Intellectual Property"
                             />
                           </div>
                         </div>
@@ -463,7 +465,7 @@ export default function BusinessCategories() {
                               src={Logo06}
                               width={20}
                               height={18}
-                              alt="Logo 06"
+                              alt="Class Actions"
                             />
                           </div>
                         </div>
@@ -476,11 +478,12 @@ export default function BusinessCategories() {
                               src={Logo09}
                               width={21}
                               height={13}
-                              alt="Logo 09"
+                              alt="Employment Law"
                             />
                           </div>
                         </div>
-                      </div>
+                      </div> 
+
                       <div className="absolute translate-x-[292px] opacity-40">
                         <div className="animate-[breath_6s_ease-in-out_4s_infinite_both]">
                           <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200/60 bg-white shadow-lg">
@@ -489,7 +492,7 @@ export default function BusinessCategories() {
                               src={Logo08}
                               width={20}
                               height={20}
-                              alt="Logo 08"
+                              alt="Insurance Disputes"
                             />
                           </div>
                         </div>
@@ -497,8 +500,9 @@ export default function BusinessCategories() {
                     </>
                   </Transition>
                 </TabPanel>
-                <TabPanel as={Fragment} static={true}>
 
+                {/* White Collar Panel */}
+                <TabPanel as={Fragment} static={true}>
                   <Transition
                     as="div"
                     show={selectedTab === 2}
@@ -515,7 +519,7 @@ export default function BusinessCategories() {
                               src={Logo02}
                               width={23}
                               height={22}
-                              alt="Logo 02"
+                              alt="Securities Fraud"
                             />
                           </div>
                         </div>
@@ -528,7 +532,7 @@ export default function BusinessCategories() {
                               src={Logo03}
                               width={22}
                               height={22}
-                              alt="Logo 03"
+                              alt="Tax Evasion"
                             />
                           </div>
                         </div>
@@ -541,7 +545,7 @@ export default function BusinessCategories() {
                               src={Logo04}
                               width={24}
                               height={22}
-                              alt="Logo 04"
+                              alt="Money Laundering"
                             />
                           </div>
                         </div>
@@ -554,7 +558,7 @@ export default function BusinessCategories() {
                               src={Logo05}
                               width={25}
                               height={25}
-                              alt="Logo 05"
+                              alt="Insider Trading"
                             />
                           </div>
                         </div>
@@ -567,7 +571,7 @@ export default function BusinessCategories() {
                               src={Logo06}
                               width={20}
                               height={18}
-                              alt="Logo 06"
+                              alt="Embezzlement"
                             />
                           </div>
                         </div>
@@ -580,7 +584,7 @@ export default function BusinessCategories() {
                               src={Logo07}
                               width={25}
                               height={25}
-                              alt="Logo 07"
+                              alt="Bank Fraud"
                             />
                           </div>
                         </div>
@@ -593,7 +597,7 @@ export default function BusinessCategories() {
                               src={Logo08}
                               width={20}
                               height={20}
-                              alt="Logo 08"
+                              alt="RICO"
                             />
                           </div>
                         </div>
@@ -606,7 +610,7 @@ export default function BusinessCategories() {
                               src={Logo09}
                               width={21}
                               height={13}
-                              alt="Logo 09"
+                              alt="Antitrust"
                             />
                           </div>
                         </div>
@@ -615,6 +619,7 @@ export default function BusinessCategories() {
                   </Transition>
                 </TabPanel>
 
+                {/* Professional Conduct Panel */}
                 <TabPanel as={Fragment} static={true}>
                   <Transition
                     as="div"
@@ -632,7 +637,7 @@ export default function BusinessCategories() {
                               src={Logo03}
                               width={22}
                               height={22}
-                              alt="Logo 03"
+                              alt="Bar Complaints"
                             />
                           </div>
                         </div>
@@ -645,7 +650,7 @@ export default function BusinessCategories() {
                               src={Logo04}
                               width={24}
                               height={22}
-                              alt="Logo 04"
+                              alt="Ethics Violations"
                             />
                           </div>
                         </div>
@@ -658,7 +663,7 @@ export default function BusinessCategories() {
                               src={Logo05}
                               width={25}
                               height={25}
-                              alt="Logo 05"
+                              alt="Malpractice"
                             />
                           </div>
                         </div>
@@ -671,7 +676,7 @@ export default function BusinessCategories() {
                               src={Logo02}
                               width={23}
                               height={22}
-                              alt="Logo 02"
+                              alt="Licensing Issues"
                             />
                           </div>
                         </div>
@@ -684,7 +689,7 @@ export default function BusinessCategories() {
                               src={Logo07}
                               width={25}
                               height={25}
-                              alt="Logo 07"
+                              alt="Professional Boards"
                             />
                           </div>
                         </div>
@@ -697,7 +702,7 @@ export default function BusinessCategories() {
                               src={Logo06}
                               width={20}
                               height={18}
-                              alt="Logo 06"
+                              alt="Regulatory Compliance"
                             />
                           </div>
                         </div>
@@ -710,7 +715,7 @@ export default function BusinessCategories() {
                               src={Logo09}
                               width={21}
                               height={13}
-                              alt="Logo 09"
+                              alt="Administrative Hearings"
                             />
                           </div>
                         </div>
@@ -723,7 +728,7 @@ export default function BusinessCategories() {
                               src={Logo08}
                               width={20}
                               height={20}
-                              alt="Logo 08"
+                              alt="License Defense"
                             />
                           </div>
                         </div>
