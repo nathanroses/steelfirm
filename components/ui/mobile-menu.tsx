@@ -86,62 +86,63 @@ export default function MobileMenu() {
           id="mobile-nav"
           className="absolute left-0 top-full z-20 w-full rounded-xl bg-white shadow-lg shadow-black/[0.03] before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(var(--color-gray-100),var(--color-gray-200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] transform transition ease-out duration-200 data-enter:data-closed:-translate-y-2 data-closed:opacity-0"
         >
-          <ul className="p-2 text-sm">
-            <li>
-              <Link
-                href="/"
-                className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
-                onClick={() => setMobileNavOpen(false)}
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/about"
-                className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
-                onClick={() => setMobileNavOpen(false)}
-              >
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/practice-areas"
-                className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
-                onClick={() => setMobileNavOpen(false)}
-              >
-                Practice Areas
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/attorneys"
-                className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
-                onClick={() => setMobileNavOpen(false)}
-              >
-                Our Attorneys
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/cases"
-                className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
-                onClick={() => setMobileNavOpen(false)}
-              >
-                Representative Cases
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/contact"
-                className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
-                onClick={() => setMobileNavOpen(false)}
-              >
-                Contact Us
-              </Link>
-            </li>
-          </ul>
+          // Update links in mobile-menu.tsx
+<ul className="p-2 text-sm">
+  <li>
+    <Link
+      href="/"
+      className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
+      onClick={() => setMobileNavOpen(false)}
+    >
+      Home
+    </Link>
+  </li>
+  <li>
+    <Link
+      href="/about"
+      className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
+      onClick={() => setMobileNavOpen(false)}
+    >
+      About Us
+    </Link>
+  </li>
+  <li>
+    <Link
+      href="/apps"
+      className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
+      onClick={() => setMobileNavOpen(false)}
+    >
+      Practice Areas
+    </Link>
+  </li>
+  <li>
+    <Link
+      href="/blog"
+      className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
+      onClick={() => setMobileNavOpen(false)}
+    >
+      Our Attorneys
+    </Link>
+  </li>
+  <li>
+    <Link
+      href="/customers"
+      className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
+      onClick={() => setMobileNavOpen(false)}
+    >
+      Representative Cases
+    </Link>
+  </li>
+  <li>
+    <Link
+      href="/support"
+      className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
+      onClick={() => setMobileNavOpen(false)}
+    >
+      Contact Us
+    </Link>
+  </li>
+</ul>
         </Transition>
       </div>
     </div>
