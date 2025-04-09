@@ -1,3 +1,4 @@
+
 import PageIllustration from "@/components/page-illustration";
 
 export default function Hero() {
@@ -10,12 +11,11 @@ export default function Hero() {
           {/* Section header */}
           <div className="text-center">
             <h1 className="mb-6 border-y text-5xl font-bold [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] md:text-6xl">
-              Apps &amp; Extensions
+              Practice Areas
             </h1>
             <div className="mx-auto max-w-3xl">
               <p className="text-lg text-gray-700">
-                Enhance your projects with our professionally-built app
-                extensions.
+                The Steel Law Firm provides exceptional representation across a wide range of legal matters.
               </p>
             </div>
           </div>
