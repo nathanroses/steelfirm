@@ -1,7 +1,7 @@
 import Image from "next/image";
-import CaseAnalysisImg01 from "@/public/images/features-02-overlay-01.png"; // Using existing images
-import CaseAnalysisImg02 from "@/public/images/features-02-overlay-02.png";
-import CaseAnalysisImg03 from "@/public/images/features-02-overlay-03.png";
+import CaseAnalysisImg01 from "@/public/images/"; // Using existing images
+import CaseAnalysisImg02 from "@/public/images/";
+import CaseAnalysisImg03 from "@/public/images/";
 
 export default function LegalAdvantages() {
   return (
