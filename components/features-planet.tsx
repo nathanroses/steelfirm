@@ -37,34 +37,7 @@ export default function LegalPracticeAreas() {
                     alt="Legal decoration"
                   />
                   <div>
-                    <Image
-                      className="absolute -left-28 top-16 z-10 animate-[float_4s_ease-in-out_infinite_both] opacity-80 transition-opacity duration-500"
-                      src={PracticeAreaImg01}
-                      width={253}
-                      height={56}
-                      alt="Criminal Defense"
-                    />
-                    <Image
-                      className="absolute left-56 top-7 z-10 animate-[float_4s_ease-in-out_infinite_1s_both] opacity-30 transition-opacity duration-500"
-                      src={PracticeAreaImg02}
-                      width={241}
-                      height={56}
-                      alt="White Collar Defense"
-                    />
-                    <Image
-                      className="absolute -left-20 bottom-24 z-10 animate-[float_4s_ease-in-out_infinite_2s_both] opacity-25 transition-opacity duration-500"
-                      src={PracticeAreaImg03}
-                      width={243}
-                      height={56}
-                      alt="Civil Litigation"
-                    />
-                    <Image
-                      className="absolute bottom-32 left-64 z-10 animate-[float_4s_ease-in-out_infinite_3s_both] opacity-80 transition-opacity duration-500"
-                      src={PracticeAreaImg04}
-                      width={251}
-                      height={56}
-                      alt="Professional Misconduct"
-                    />
+  
                   </div>
                 </div>
               </div>
