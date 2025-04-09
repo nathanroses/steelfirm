@@ -1,7 +1,4 @@
 import Image from "next/image";
-import CaseAnalysisImg01 from "@/public/images/"; // Using existing images
-import CaseAnalysisImg02 from "@/public/images/";
-import CaseAnalysisImg03 from "@/public/images/";
 
 export default function LegalAdvantages() {
   return (
@@ -64,25 +61,6 @@ export default function LegalAdvantages() {
             </div>
             <div className="absolute top-16">
               <div className="pointer-events-none mb-[7%] translate-y-2 transition duration-300 group-hover:translate-y-0 group-hover:opacity-0">
-                <Image
-                  className="-rotate-2"
-                  src={CaseAnalysisImg01}
-                  width={500}
-                  height={72}
-                  alt="Case Analysis Document"
-                />
-              </div>
-              <div className="delay-50 pointer-events-none mb-[3.5%] translate-y-2 transition duration-300 group-hover:translate-y-0 group-hover:opacity-0">
-                <Image src={CaseAnalysisImg02} width={500} alt="Evidence Report" />
-              </div>
-              <div className="pointer-events-none translate-y-2 transition delay-100 duration-300 group-hover:translate-y-0 group-hover:opacity-0">
-                <Image
-                  className="-rotate-1"
-                  src={CaseAnalysisImg03}
-                  width={500}
-                  height={91}
-                  alt="Legal Strategy Document"
-                />
               </div>
             </div>
           </div>
